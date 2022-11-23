@@ -1,0 +1,39 @@
+.client-list {
+  display: flex;
+  gap: 30px;
+}
+.client-item {
+  width: calc((100% - 150px) / 6);
+  height: 92px;
+}
+.client-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--icon-color);
+  transition: border-color var(--transition-duration)
+      var(--transition-timing-function),
+    color var(--transition-duration) var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+  }
+}
+.client-icon {
+  fill: currentColor;
+}
+
+/* -----------II version--------- */
+/* .client-link:hover,
+.client-link:focus {
+  border-color: var(--accent-color);
+}
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
+  fill: var(--accent-color);
+} */

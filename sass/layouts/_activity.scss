@@ -1,0 +1,30 @@
+.section-picture {
+  padding-top: 0;
+}
+.picture,
+.people {
+  display: flex;
+  gap: 30px;
+}
+.picture__item {
+  position: relative;
+  width: calc((100% - 60px) / 3);
+  display: flex;
+}
+
+.picture__title {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}

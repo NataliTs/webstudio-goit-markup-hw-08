@@ -1,0 +1,15 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--title-text-color);
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.section,
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}

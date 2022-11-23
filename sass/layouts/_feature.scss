@@ -1,0 +1,31 @@
+.card {
+  display: flex;
+  gap: 30px;
+}
+.card__item {
+  max-width: 270px;
+}
+.card__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+  margin-bottom: 10px;
+}
+.card__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+.card__icons {
+  display: flex;
+  background-color: var(--secondary-background-color);
+  border-radius: 4px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
