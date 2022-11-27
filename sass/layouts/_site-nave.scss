@@ -4,7 +4,10 @@
   line-height: 1.15;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
-  display: flex;
+  display: none;
+  @include tablet {
+    display: flex;
+  }
   align-items: center;
   gap: 10px;
   transition: color var(--transition-duration) var(--transition-timing-function);
@@ -22,13 +25,26 @@
     width: 100%;
     height: 4px;
     border-radius: 2px;
-    bottom: -32px;
+    bottom: -33px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      bottom: -40px;
+    }
     background-color: var(--accent-color);
     display: block;
   }
 }
+
 .site-nav .contact {
   color: var(--text-color);
+  display: none;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  @include desktop {
+    display: flex;
+  }
 }
 
 .nav-icon {
@@ -42,6 +58,13 @@
   display: flex;
   align-items: center;
   gap: 50px;
+}
+.contact-list-tab {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
 }
 .header-nav {
   display: flex;

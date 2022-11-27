@@ -1,10 +1,13 @@
 .modal-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
+  @include desktop {
+    line-height: 1.17;
+  }
 }
 .modal-input {
   width: 100%;
@@ -100,7 +103,10 @@
 
 .check-text {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
+  @include desktop {
+    font-size: 14px;
+  }
   line-height: 1.71;
   color: var(--text-color);
   display: flex;
