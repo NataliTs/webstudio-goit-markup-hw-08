@@ -6,6 +6,7 @@
 .footer-wrap {
   position: relative;
   display: flex;
+  gap: 60px;
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
@@ -92,7 +93,6 @@
 }
 
 .center-column-footer {
-  margin-bottom: 60px;
   @include desktop {
     margin-left: 70px;
   }
@@ -106,10 +106,7 @@
 .footer-wrap-tab {
   @media screen and (min-width: 481px) and (max-width: 768px) {
     display: flex;
-    justify-content: space-between;
-    padding-left: 76px;
-    padding-right: 89px;
-    margin-bottom: 60px;
+    justify-content: space-around;
   }
   @include desktop {
     display: flex;

@@ -45,9 +45,6 @@
   padding-right: 15px;
 }
 
-.mob-menu-nav {
-  margin-bottom: 206px;
-}
 .mob-menu-contact-list {
   margin-bottom: 64px;
 }
@@ -96,7 +93,7 @@
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
-.mob-soc-item:not(:last-child) > .mob-soc-link::after {
+.mob-soc-item:not(:last-child)::after {
   content: "";
   width: 1px;
   height: 22px;

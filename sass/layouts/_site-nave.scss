@@ -55,7 +55,10 @@
   fill: currentColor;
 }
 .site-nav {
-  display: flex;
+  display: none;
+  @include tablet {
+    display: flex;
+  }
   align-items: center;
   gap: 50px;
 }

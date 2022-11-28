@@ -4,12 +4,12 @@
   padding-right: 15px;
   margin: 0 auto;
   @include mobile {
-    min-width: 480px;
+    width: 480px;
   }
   @include tablet {
-    max-width: 768px;
+    width: 768px;
   }
   @include desktop {
-    max-width: 1200px;
+    width: 1200px;
   }
 }
