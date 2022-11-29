@@ -11,7 +11,9 @@
   }
 }
 .header-nav .logo {
-  margin-right: 93px;
+  @include tablet {
+    margin-right: 93px;
+  }
 }
 .logo--header {
   color: var(--black-color);
