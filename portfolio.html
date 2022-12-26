@@ -30,13 +30,11 @@
           </a>
           <ul class="site-nav list">
             <li><a href="./index.html" class="link">Студія</a></li>
-            <li>
-              <a href="./portfolio.html" class="link current">Портфоліо</a>
-            </li>
+            <li><a href="./portfolio.html" class="link current">Портфоліо</a></li>
             <li><a href="#" class="link">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="site-nav list">
+        <ul class="site-nav contact-list-tab list">
           <li>
             <a href="mailto:info@devstudio.com" class="link contact"
               ><svg class="nav-icon" width="16" height="12">
@@ -54,6 +52,55 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu-open" data-menu-open>
+          <svg class="menu-open-icon" width="24" height="16">
+            <use href="./imges/icons.svg#icon-menu_24px"></use>
+          </svg>
+        </button>
+        </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container-mob-menu">
+          <div class="mob-menu-top">
+            <div class="btn-menu-clouse">
+        <button type="button" class="menu-close" data-menu-close>
+          <svg class="menu-close-icon" width="19" height="19">
+            <use href="./imges/icons.svg#icon-close_24px"></use>
+          </svg>
+</div>
+        <ul class="mob-menu-nav list">
+            <li class="mob-menu-item"><a href="./index.html" class="mob-menu-link link">Студія</a></li>
+            <li class="mob-menu-item"><a href="./portfolio.html" class="mob-menu-link link current">Портфоліо</a></li>
+            <li class="mob-menu-item"><a href="#" class="mob-menu-link link">Контакти</a></li>
+        </ul>
+        </nav>
+          </div>
+          <div class="mob-menu-bottom">
+                    <ul class="mob-menu-contact-list list">
+          <li class="mob-menu-contact-item">
+            <a href="tel:+380961111111" class="link mob-menu-contact-tel"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mob-menu-contact-item">
+            <a href="mailto:info@devstudio.com" class="link mob-menu-contact-mail"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+       
+        <ul class="mob-soc-list list">
+          <li class="mob-soc-item"><a href="" class="mob-soc-link link" target="_blank"
+                    rel="noopener noreferrer nofollow">Instagram</a></li>
+          <li class="mob-soc-item"><a href="" class="mob-soc-link link" target="_blank"
+                    rel="noopener noreferrer nofollow">Twitter</a></li>
+          <li class="mob-soc-item"><a href="" class="mob-soc-link link" target="_blank"
+                    rel="noopener noreferrer nofollow">Facebook</a></li>
+          <li class="mob-soc-item"><a href="" class="mob-soc-link link" target="_blank"
+                    rel="noopener noreferrer nofollow">LinkedIn</a></li>
+        </ul>
+        
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -61,17 +108,18 @@
         <div class="container">
           <h1 class="visually-hidden">Портфоліо</h1>
           <ul class="filters list">
-            <li><button type="button" class="filter-button">Усі</button></li>
+            <div class="filters_up"><li><button type="button" class="filter-button">Усі</button></li>
             <li>
               <button type="button" class="filter-button">Веб-сайти</button>
             </li>
             <li>
               <button type="button" class="filter-button">Додатки</button>
-            </li>
-            <li><button type="button" class="filter-button">Дизайн</button></li>
+            </li></div>
+            <div class="filters_down"><li><button type="button" class="filter-button">Дизайн</button></li>
             <li>
               <button type="button" class="filter-button">Маркетинг</button>
-            </li>
+            </li></div>
+            
           </ul>
           <ul class="portfolio-list list">
             <li class="portfolio-card">
@@ -356,5 +404,7 @@
         
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

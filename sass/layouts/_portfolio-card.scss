@@ -1,5 +1,11 @@
 .portfolio-card {
-  width: calc((100% - 60px) / 3);
+  width: 100%;
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 60px) / 3);
+  }
 }
 .portfolio-card-link {
   color: var(--title-text-color);
@@ -7,7 +13,6 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  display: block;
   transition: box-shadow var(--transition-duration)
     var(--transition-timing-function);
   &:hover,
@@ -18,6 +23,12 @@
   &:hover .portfolio-text,
   &:focus .portfolio-text {
     transform: translateY(0);
+  }
+  // height: 100%;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
   }
 }
 .card-title {
@@ -37,6 +48,7 @@
   border: 1px solid var(--border-color);
   border-top: none;
   padding: 20px 24px;
+  flex-grow: 1;
 }
 .portfolio-list {
   display: flex;
